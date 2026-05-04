@@ -115,7 +115,7 @@ export default function EnglishHome() {
 
       <section className="border-y border-[var(--line)] bg-white/42 py-20">
         <ScrollReveal className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Selected work" title="Three sample case studies to replace with your real wins." />
+          <SectionHeading eyebrow="Selected work" title="Projects that show both business thinking and visual execution." />
           <div className="mt-12 grid gap-8 lg:grid-cols-3">
             {projects.map((project, index) => (
               <ProjectCard key={project.slug} project={project} index={index} />

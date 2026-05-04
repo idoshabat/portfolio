@@ -3,7 +3,7 @@ import { processSteps } from "@/lib/site-data-en";
 
 export const metadata = {
   title: "Process | Studio Ido",
-  description: "A clear design process from discovery to developer handoff.",
+  description: "A clear process from first contact to development, testing, and launch.",
 };
 
 export default function EnglishProcessPage() {
@@ -12,8 +12,8 @@ export default function EnglishProcessPage() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Process"
-          title="Structured enough to trust. Flexible enough for real projects."
-          copy="A strong process shows clients you can lead the work. Replace the details below with your actual tools, meeting rhythm, and deliverables."
+          title="From the first message to a product that is ready to go live."
+          copy="The goal is simple: you always know where the project stands, what comes next, and what I need from you to keep moving."
         />
         <div className="mt-16 grid gap-0">
           {processSteps.map((step, index) => (

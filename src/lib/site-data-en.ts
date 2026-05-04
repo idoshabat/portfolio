@@ -19,41 +19,53 @@ import {
 
 export const services = [
   {
-    title: "Web Design",
+    title: "Website Design & Development",
     description:
-      "Conversion-focused websites with memorable art direction, clear storytelling, and responsive layouts.",
+      "Brand websites and landing pages that look professional, load fast, and guide visitors toward a clear action, with responsive design and a strong mobile experience.",
     icon: LayoutDashboard,
   },
   {
-    title: "Mobile App Design",
+    title: "App Design & Development",
     description:
-      "Native-feeling iOS and Android experiences with thoughtful flows, polished UI, and scalable components.",
+      "Web and mobile apps with clear flows, polished interfaces, and user experiences that feel simple even when the product is complex.",
     icon: Smartphone,
   },
   {
-    title: "Design Systems",
+    title: "Online Stores",
     description:
-      "Reusable tokens, components, interaction patterns, and documentation that keep products moving fast.",
+      "E-commerce experiences with strong product pages, smooth checkout flows, product presentation that sells, and UX that builds trust and improves conversions.",
     icon: Blocks,
   },
   {
     title: "UX Strategy",
     description:
-      "Audits, user journeys, wireframes, and prioritization that turn fuzzy ideas into buildable product direction.",
+      "Product definition, quick research, user journeys, wireframes, and prioritization that turn a messy idea into a clear product direction.",
     icon: Compass,
   },
 ];
 
 export const projects = [
   {
-    slug: "nova-pay",
-    title: "Nova Pay",
-    type: "Fintech mobile app",
+    slug: "layout-design",
+    title: "Layout Design",
+    type: "Architecture & planning studio",
     year: "2026",
     description:
-      "A confident wallet experience for freelancers who need fast invoices, clean analytics, and instant payouts.",
-    metrics: ["42% faster onboarding", "18 screens", "Design system"],
-    palette: "from-[#006d77] via-[#94e857] to-[#ffd166]",
+      "A polished company website for an architecture and planning studio, built around clear navigation, confident visual hierarchy, project discovery, and a direct path from interest to contact.",
+    metrics: ["Brand website", "Project gallery", "Client inquiries"],
+    palette: "from-[#006d77] via-[#d9f99d] to-[#ffd166]",
+    liveUrl: "https://www.layout-net.com/",
+  },
+  {
+    slug: "next-level-academy",
+    title: "Next Level Academy",
+    type: "Basketball academy",
+    year: "2026",
+    description:
+      "An energetic website for a basketball academy, designed to speak clearly to parents and players, present training programs, and create a strong path toward joining the academy.",
+    metrics: ["Sports website", "Training signups", "Mobile experience"],
+    palette: "from-[#12110f] via-[#ff4d2e] to-[#00a6fb]",
+    liveUrl: "https://www.nextlevelacademy.com/",
   },
   {
     slug: "wellnest",
@@ -79,27 +91,39 @@ export const projects = [
 
 export const processSteps = [
   {
-    title: "Discover",
+    title: "Get in touch",
     description:
-      "We clarify goals, audience, constraints, and the commercial job the interface needs to do.",
+      "The process starts with a WhatsApp message or a contact-form submission. I reply, understand the project at a high level, and check whether it is a good fit.",
+    icon: MessagesSquare,
+  },
+  {
+    title: "Discovery call",
+    description:
+      "We clarify goals, audience, desired style, scope, deadline, and what success should look like for the business.",
     icon: ScanSearch,
   },
   {
-    title: "Shape",
+    title: "Proposal & scope",
     description:
-      "I map flows, sketch wireframes, and define the hierarchy before pushing pixels.",
+      "Once the direction is clear, you receive a structured proposal with deliverables, timeline, project stages, and what is included.",
+    icon: CalendarCheck,
+  },
+  {
+    title: "UX structure",
+    description:
+      "I define the page or screen structure, content hierarchy, and core user flow before moving into the full visual design.",
     icon: PencilRuler,
   },
   {
-    title: "Design",
+    title: "Design & feedback",
     description:
-      "High-fidelity screens, component states, motion notes, and design system foundations come together.",
+      "I create the polished visual direction, then we review, refine colors, components, screens, and details until the experience feels right.",
     icon: WandSparkles,
   },
   {
-    title: "Hand Off",
+    title: "Development, testing & launch",
     description:
-      "You receive dev-ready files, specs, assets, and support during implementation.",
+      "After the design is approved, the website moves into development, mobile and desktop testing, form and link setup, and a clean launch.",
     icon: Rocket,
   },
 ];

@@ -3,7 +3,7 @@ import { processSteps } from "@/lib/site-data";
 
 export const metadata = {
   title: "תהליך | Studio Ido",
-  description: "תהליך עיצוב ברור מגילוי ועד מסירה לפיתוח.",
+  description: "תהליך עבודה ברור מיצירת קשר ועד עלייה לאוויר.",
 };
 
 export default function ProcessPage() {
@@ -12,8 +12,8 @@ export default function ProcessPage() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="תהליך"
-          title="מסודר מספיק כדי לסמוך עליו. גמיש מספיק לפרויקטים אמיתיים."
-          copy="תהליך חזק מראה ללקוחות שאפשר לסמוך עליך שתוביל את העבודה. החלף את הפרטים בכלים, קצב הפגישות והתוצרים האמיתיים שלך."
+          title="מההודעה הראשונה ועד מוצר שמוכן לצאת החוצה."
+          copy="המטרה היא שתדע בכל רגע איפה הפרויקט עומד, מה השלב הבא, ומה צריך ממך כדי להתקדם בלי בלגן."
         />
         <div className="mt-16 grid gap-0">
           {processSteps.map((step, index) => (

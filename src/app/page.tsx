@@ -118,7 +118,7 @@ export default function Home() {
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <SectionHeading
               eyebrow="עבודות נבחרות"
-              title="שלושה קייסים לדוגמה שצריך להחליף בהצלחות האמיתיות שלך."
+              title="פרויקטים שמראים גם חשיבה עסקית וגם ביצוע ויזואלי."
             />
             <Link href="/work" className="inline-flex items-center gap-2 font-black text-[var(--cobalt)]">
               לכל הפרויקטים

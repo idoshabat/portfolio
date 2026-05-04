@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { ProjectCard } from "@/components/project-card";
 import { SectionHeading } from "@/components/section-heading";
 import { projects } from "@/lib/site-data";
@@ -39,6 +41,17 @@ export default function WorkPage() {
                 </div>
                 <div>
                   <p className="text-xl leading-9 text-black/68">{project.description}</p>
+                  {project.liveUrl ? (
+                    <Link
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="nav-cta mt-6 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-black"
+                    >
+                      צפייה באתר החי
+                      <ArrowUpRight size={18} />
+                    </Link>
+                  ) : null}
                   <div className="mt-7 grid gap-4 sm:grid-cols-3">
                     {project.metrics.map((metric) => (
                       <div key={metric} className="rounded-[8px] border border-[var(--line)] bg-white p-4">

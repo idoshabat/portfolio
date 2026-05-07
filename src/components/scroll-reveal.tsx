@@ -11,8 +11,6 @@ type ScrollRevealProps = {
 export function ScrollReveal({ children, className = "", delay = 0 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const hasRevealed = useRef(false);
-  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const node = ref.current;
@@ -20,19 +18,18 @@ export function ScrollReveal({ children, className = "", delay = 0 }: ScrollReve
       return;
     }
 
-    lastScrollY.current = window.scrollY;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
-        const isScrollingDown = window.scrollY >= lastScrollY.current;
-        lastScrollY.current = window.scrollY;
-
-        if (entry.isIntersecting && (isScrollingDown || !hasRevealed.current)) {
-          hasRevealed.current = true;
+        if (entry.isIntersecting) {
           setIsVisible(true);
+          return;
+        }
+
+        if (entry.boundingClientRect.top > 0) {
+          setIsVisible(false);
         }
       },
-      { threshold: 0.18, rootMargin: "-40px 0px -110px 0px" },
+      { threshold: 0.08, rootMargin: "0px 0px 10% 0px" },
     );
 
     observer.observe(node);

@@ -504,12 +504,19 @@ body {
 
 .scroll-reveal {
   opacity: 0;
-  transform: translateY(34px) scale(0.985);
-  filter: blur(8px);
+  transform: translateY(24px) scale(0.99);
+  filter: blur(6px);
   transition:
     opacity 720ms ease,
     transform 720ms cubic-bezier(0.2, 0.8, 0.2, 1),
     filter 720ms ease;
+}
+
+@media (max-width: 640px) {
+  .scroll-reveal {
+    transform: translateY(16px) scale(0.995);
+    filter: blur(4px);
+  }
 }
 
 .scroll-reveal.is-visible {

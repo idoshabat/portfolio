@@ -46,6 +46,7 @@ export function CapabilityMarquee({ items }: CapabilityMarqueeProps) {
   return (
     <section
       ref={railRef}
+      dir="ltr"
       className={`capability-rail border-b border-[var(--line)] bg-[var(--ink)] py-5 text-white ${
         isDragging ? "is-dragging" : ""
       }`}

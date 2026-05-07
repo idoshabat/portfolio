@@ -90,7 +90,7 @@ export function Header() {
                 <span />
               </span>
             </button>
-            <div className="mobile-nav-panel absolute right-0 mt-4 w-[calc(100vw-1.5rem)] rounded-[8px] p-3 sm:w-80">
+            <div className="mobile-nav-panel fixed left-3 right-3 top-[86px] rounded-[8px] p-3 md:hidden">
               {navItems.map((item, index) => {
                 const isActive = normalizedPath === item.href;
 

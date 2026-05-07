@@ -48,82 +48,124 @@ export const projects = [
   {
     slug: "layout-design",
     title: "Layout Design",
+    category: "business-websites",
     type: "Architecture & planning studio",
     year: "2026",
     description:
       "A polished company website for an architecture and planning studio, built around clear navigation, confident visual hierarchy, project discovery, and a direct path from interest to contact.",
     metrics: ["Brand website", "Project gallery", "Client inquiries"],
     palette: "from-[#006d77] via-[#d9f99d] to-[#ffd166]",
+    previewImage: "/projects/layout-design.png",
     liveUrl: "https://www.layout-net.com/",
   },
   {
     slug: "next-level-academy",
     title: "Next Level Academy",
+    category: "sports-wellness",
     type: "Basketball academy",
     year: "2026",
     description:
       "An energetic website for a basketball academy, designed to speak clearly to parents and players, present training programs, and create a strong path toward joining the academy.",
     metrics: ["Sports website", "Training signups", "Mobile experience"],
     palette: "from-[#12110f] via-[#ff4d2e] to-[#00a6fb]",
+    previewImage: "/projects/next-level.png",
     liveUrl: "https://www.nextlevelacademy.com/",
   },
   {
-    slug: "wellnest",
-    title: "Wellnest",
-    type: "Health booking platform",
-    year: "2025",
+    slug: "shalva-yoga-studio",
+    title: "Shalva Studio",
+    category: "sports-wellness",
+    type: "Yoga studio website",
+    year: "2026",
     description:
-      "A calmer booking flow that helps clients compare practitioners, reserve sessions, and manage care plans.",
-    metrics: ["31% higher completion", "Web app", "UX research"],
-    palette: "from-[#ff4d2e] via-[#00a6fb] to-[#94e857]",
+      "A boutique Hebrew RTL yoga studio concept with a calm editorial visual system, responsive home page, class schedule, pricing, teachers, studio information, contact flow, and a polished booking experience.",
+    metrics: ["Full RTL", "Class schedule", "Booking flow"],
+    palette: "from-[#3d2419] via-[#d8a47f] to-[#f2e8dc]",
+    previewImage: "/projects/shalva-yoga.png",
+    liveUrl: "https://yoga-app-zeta.vercel.app/",
   },
   {
-    slug: "atlas-crm",
-    title: "Atlas CRM",
-    type: "B2B dashboard",
-    year: "2025",
+    slug: "hoopprogress",
+    title: "HoopProgress",
+    category: "apps-platforms",
+    type: "Basketball training platform",
+    year: "2026",
     description:
-      "A dense sales workspace redesigned for scanning, confident follow-up, and fewer lost opportunities.",
-    metrics: ["12 core flows", "SaaS UI", "Prototype"],
-    palette: "from-[#12110f] via-[#006d77] to-[#ff4d2e]",
+      "A training platform for basketball players and coaches, combining a mobile app, web dashboard, and full coach-player connection. The product supports workout tracking, shooting stats, assigned plans, connection requests, calendars, and notifications.",
+    metrics: ["Mobile app", "Coach dashboard", "Performance tracking"],
+    palette: "from-[#0f0f11] via-[#f59e0b] to-[#34d399]",
+    previewImage: "/projects/hoopprogress.png",
+    liveUrl: "https://hoop-progress-frontend.vercel.app/",
   },
+  // {
+  //   slug: "wellnest",
+  //   title: "Wellnest",
+  //   category: "apps-platforms",
+  //   type: "Health booking platform",
+  //   year: "2025",
+  //   description:
+  //     "A calmer booking flow that helps clients compare practitioners, reserve sessions, and manage care plans.",
+  //   metrics: ["31% higher completion", "Web app", "UX research"],
+  //   palette: "from-[#ff4d2e] via-[#00a6fb] to-[#94e857]",
+  //   previewImage: "/projects/wellnest.svg",
+  // },
+  // {
+  //   slug: "atlas-crm",
+  //   title: "Atlas CRM",
+  //   category: "apps-platforms",
+  //   type: "B2B dashboard",
+  //   year: "2025",
+  //   description:
+  //     "A dense sales workspace redesigned for scanning, confident follow-up, and fewer lost opportunities.",
+  //   metrics: ["12 core flows", "SaaS UI", "Prototype"],
+  //   palette: "from-[#12110f] via-[#006d77] to-[#ff4d2e]",
+  //   previewImage: "/projects/atlas-crm.svg",
+  // },
+];
+
+export const workCategories = [
+  { id: "all", label: "All" },
+  { id: "business-websites", label: "Websites" },
+  { id: "sports-wellness", label: "Sports & Wellness" },
+  { id: "apps-platforms", label: "Apps & Platforms" },
+  { id: "ecommerce", label: "E-commerce" },
 ];
 
 export const processSteps = [
   {
-    title: "Get in touch",
+    title: "Initial Contact",
     description:
-      "The process starts with a WhatsApp message or a contact-form submission. I reply, understand the project at a high level, and check whether it is a good fit.",
+      "The process begins with a quick message via WhatsApp or the contact form. I review your request, understand the high-level vision, and confirm whether the project is a good fit.",
     icon: MessagesSquare,
   },
   {
     title: "Discovery call",
     description:
-      "We clarify goals, audience, desired style, scope, deadline, and what success should look like for the business.",
+      "We dive deeper into your business goals, target audience, visual direction, and project scope. This ensures we are aligned on expectations and success criteria from the start.",
     icon: ScanSearch,
   },
   {
-    title: "Proposal & scope",
+    title: "Proposal & Scope Definition",
     description:
-      "Once the direction is clear, you receive a structured proposal with deliverables, timeline, project stages, and what is included.",
+      "You will receive a structured proposal outlining deliverables, timeline, milestones, and what is included in the project. Everything is clearly defined before moving forward.",
     icon: CalendarCheck,
   },
   {
-    title: "UX structure",
+    title: "UX & Structure",
     description:
-      "I define the page or screen structure, content hierarchy, and core user flow before moving into the full visual design.",
+      "I design the foundation of the experience: page structure, content hierarchy, and user flows, to ensure clarity and usability before visual design begins.",
     icon: PencilRuler,
   },
   {
-    title: "Design & feedback",
+    title: "Design & Iteration",
     description:
-      "I create the polished visual direction, then we review, refine colors, components, screens, and details until the experience feels right.",
+      "A polished visual direction is created, followed by a collaborative feedback process. We refine layouts, components, colors, and details until everything aligns with your vision.",
     icon: WandSparkles,
   },
   {
-    title: "Development, testing & launch",
+    title: "Development & Launch",
     description:
-      "After the design is approved, the website moves into development, mobile and desktop testing, form and link setup, and a clean launch.",
+      "The approved design is translated into a fully functional website. This includes responsive development, testing across devices, and a smooth, production-ready launch.",
     icon: Rocket,
   },
 ];

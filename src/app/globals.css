@@ -149,27 +149,90 @@ body {
 .brand-mark {
   position: relative;
   isolation: isolate;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
   border: 1px solid rgba(18, 17, 15, 0.14);
   border-radius: 999px;
-  background: white;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(242, 247, 238, 0.86)),
+    white;
+  box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.6);
   overflow: hidden;
 }
 
 .brand-mark::before {
   content: "";
   position: absolute;
-  inset: 5px;
+  inset: -1px;
   z-index: -1;
   border-radius: inherit;
-  background: linear-gradient(135deg, var(--mint), var(--sky));
-  transform: scale(0.72);
-  opacity: 0;
-  transition: opacity 240ms ease, transform 280ms ease;
+  background: conic-gradient(from 160deg, var(--mint), var(--sky), var(--coral), var(--mint));
+  opacity: 0.18;
+  transition: opacity 240ms ease, transform 520ms ease;
+}
+
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border-radius: inherit;
+  background: white;
+  z-index: -1;
 }
 
 .nav-brand:hover .brand-mark::before {
-  opacity: 1;
-  transform: scale(1);
+  opacity: 0.95;
+  transform: rotate(140deg);
+}
+
+.brand-glyph {
+  position: relative;
+  width: 27px;
+  height: 28px;
+  color: var(--ink);
+}
+
+.brand-glyph-i,
+.brand-glyph-d,
+.brand-glyph-dot {
+  position: absolute;
+  display: block;
+}
+
+.brand-glyph-i {
+  left: 1px;
+  top: 4px;
+  width: 7px;
+  height: 21px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.brand-glyph-d {
+  right: 0;
+  top: 2px;
+  width: 20px;
+  height: 24px;
+  border: 6px solid currentColor;
+  border-left: 0;
+  border-radius: 0 999px 999px 0;
+}
+
+.brand-glyph-dot {
+  left: 12px;
+  bottom: 1px;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--coral);
+  transition: transform 240ms ease, background 240ms ease;
+}
+
+.nav-brand:hover .brand-glyph-dot {
+  background: var(--sky);
+  transform: translateY(-2px);
 }
 
 .desktop-nav {

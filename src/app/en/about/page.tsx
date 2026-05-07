@@ -20,8 +20,8 @@ export default function EnglishAboutPage() {
                 <span className="h-28 rounded-[8px] bg-[var(--ink)]" />
               </div>
               <div>
-                <p className="text-6xl font-black leading-none">Your photo here</p>
-                <p className="mt-4 text-black/58">Add a strong portrait or studio image for trust.</p>
+                <p className="text-6xl font-black leading-none">Studio Ido</p>
+                <p className="mt-4 text-black/58">Design and development for websites, apps, and digital products that feel precise from the first interaction.</p>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@ export default function EnglishAboutPage() {
           <SectionHeading
             eyebrow="About"
             title="A designer who makes digital products feel sharper than the competition."
-            copy="Write this in your own voice. Talk about who you help, what kind of work you love, your background, and the business outcomes clients can expect."
+            copy="I help businesses, founders, and brands turn digital ideas into websites, apps, and platforms that look professional, work clearly, and feel right for the people using them."
           />
           <div className="mt-10 grid gap-5">
             {principles.map((principle) => (

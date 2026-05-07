@@ -42,23 +42,21 @@ export function Footer() {
           <div>
             <h3 className="font-black">{isEnglish ? "Contact" : "קשר"}</h3>
             <div className="mt-4 grid gap-2 text-sm text-white/66">
-              <a href="mailto:hello@yourstudio.com" className="hover:text-white">
-                hello@yourstudio.com
+              <a href="https://wa.me/972549408667" target="_blank" rel="noreferrer" className="hover:text-white">
+                WhatsApp
               </a>
-              <a href="https://www.linkedin.com" className="hover:text-white">
-                LinkedIn
-              </a>
-              <a href="https://www.behance.net" className="hover:text-white">
-                Behance
-              </a>
+              <Link href={withLocale("/work", locale)} className="hover:text-white">
+                {isEnglish ? "Selected work" : "עבודות נבחרות"}
+              </Link>
+              <Link href={withLocale("/contact", locale)} className="hover:text-white">
+                {isEnglish ? "Start a project" : "התחלת פרויקט"}
+              </Link>
             </div>
           </div>
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-white/42">
-        {isEnglish
-          ? "© 2026 Studio Ido. Replace this with your legal business name."
-          : "© 2026 Studio Ido. החלף בשם העסק הרשמי שלך."}
+        © 2026 Studio Ido. {isEnglish ? "All rights reserved." : "כל הזכויות שמורות."}
       </div>
     </footer>
   );

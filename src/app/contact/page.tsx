@@ -15,7 +15,7 @@ export default function ContactPage() {
           <SectionHeading
             eyebrow="צור קשר"
             title="ספרו לי מה אתם בונים. אני אביא את החדות."
-            copy="לפני פרסום האתר, החלף את האימייל, הקישורים והיעד של הטופס בפרטי העסק האמיתיים שלך."
+            copy="שלחו הודעה קצרה עם סוג הפרויקט, המטרה העסקית והדדליין. אחזור אליכם עם שאלות מדויקות והצעד הבא."
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {contactReasons.map((reason) => (
@@ -60,10 +60,10 @@ export default function ContactPage() {
               <span className="text-sm font-black">מה צריך לעצב?</span>
               <textarea className="min-h-36 rounded-[8px] border border-[var(--line)] bg-[var(--paper)] px-4 py-3 outline-none transition focus:border-[var(--cobalt)] focus:shadow-[0_0_0_3px_rgba(0,109,119,0.16)]" placeholder="ספרו על העסק, הדדליין והמטרות." />
             </label>
-            <button className="magnetic-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--coral)] px-6 py-4 text-sm font-black text-white shadow-[0_8px_0_#171513] transition hover:-translate-y-0.5" type="button">
-              שליחת בריף
+            <a className="magnetic-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--coral)] px-6 py-4 text-sm font-black text-white shadow-[0_8px_0_#171513] transition hover:-translate-y-0.5" href="https://wa.me/972549408667?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%94%D7%AA%D7%97%D7%99%D7%9C%20%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%20%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99." target="_blank" rel="noreferrer">
+              שליחת הודעה בוואטסאפ
               <ArrowUpRight size={18} />
-            </button>
+            </a>
           </div>
         </form>
       </section>

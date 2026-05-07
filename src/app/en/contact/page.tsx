@@ -15,7 +15,7 @@ export default function EnglishContactPage() {
           <SectionHeading
             eyebrow="Contact"
             title="Tell me what you are building. I will bring the sharp edges."
-            copy="Replace the email, social links, and form destination with your real business details before publishing."
+            copy="Send a short message with the project type, business goal, and timeline. I will reply with focused questions and the next step."
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {contactReasons.map((reason) => (
@@ -60,10 +60,10 @@ export default function EnglishContactPage() {
               <span className="text-sm font-black">What should we design?</span>
               <textarea className="min-h-36 rounded-[8px] border border-[var(--line)] bg-[var(--paper)] px-4 py-3 outline-none transition focus:border-[var(--cobalt)] focus:shadow-[0_0_0_3px_rgba(0,109,119,0.16)]" placeholder="Tell me about the business, deadline, and goals." />
             </label>
-            <button className="magnetic-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--coral)] px-6 py-4 text-sm font-black text-white shadow-[0_8px_0_#171513] transition hover:-translate-y-0.5" type="button">
-              Send project brief
+            <a className="magnetic-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--coral)] px-6 py-4 text-sm font-black text-white shadow-[0_8px_0_#171513] transition hover:-translate-y-0.5" href="https://wa.me/972549408667?text=Hi%2C%20I%20would%20like%20to%20start%20a%20digital%20project." target="_blank" rel="noreferrer">
+              Send a WhatsApp message
               <ArrowUpRight size={18} />
-            </button>
+            </a>
           </div>
         </form>
       </section>

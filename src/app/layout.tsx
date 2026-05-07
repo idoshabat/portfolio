@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "Studio Ido | מעצב אתרים ואפליקציות",
   description:
     "פורטפוליו פרילנסר לעיצוב אתרים, אפליקציות מובייל, אסטרטגיית מוצר וחוויות דיגיטליות מלוטשות.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

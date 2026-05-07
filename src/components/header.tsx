@@ -17,8 +17,12 @@ export function Header() {
     <header dir={isEnglish ? "ltr" : "rtl"} className="nav-shell sticky top-0 z-50 px-3 py-3 sm:px-5">
       <nav className="nav-frame mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <Link href={withLocale("/", locale)} className="nav-brand group flex items-center gap-3" aria-label="Go home">
-          <span className="brand-mark grid size-12 place-items-center text-base font-black text-[var(--ink)]">
-            <span>ID</span>
+          <span className="brand-mark" aria-hidden="true">
+            <span className="brand-glyph">
+              <span className="brand-glyph-i" />
+              <span className="brand-glyph-d" />
+              <span className="brand-glyph-dot" />
+            </span>
           </span>
           <span className="leading-tight">
             <span className="block text-sm font-black uppercase tracking-[0.22em]">

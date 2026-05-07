@@ -75,7 +75,7 @@ export function WorkShowcase({ projects, categories, labels }: WorkShowcaseProps
         })}
       </div>
 
-      <div className="mt-10 grid gap-8 lg:grid-cols-3">
+      <div className="mt-10 grid gap-8 md:grid-cols-2">
         {filteredProjects.map((project, index) => (
           <ProjectCard key={project.slug} project={project} index={index} />
         ))}

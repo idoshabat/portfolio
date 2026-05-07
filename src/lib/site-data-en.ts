@@ -97,30 +97,6 @@ export const projects = [
     previewImage: "/projects/hoopprogress.png",
     liveUrl: "https://hoop-progress-frontend.vercel.app/",
   },
-  // {
-  //   slug: "wellnest",
-  //   title: "Wellnest",
-  //   category: "apps-platforms",
-  //   type: "Health booking platform",
-  //   year: "2025",
-  //   description:
-  //     "A calmer booking flow that helps clients compare practitioners, reserve sessions, and manage care plans.",
-  //   metrics: ["31% higher completion", "Web app", "UX research"],
-  //   palette: "from-[#ff4d2e] via-[#00a6fb] to-[#94e857]",
-  //   previewImage: "/projects/wellnest.svg",
-  // },
-  // {
-  //   slug: "atlas-crm",
-  //   title: "Atlas CRM",
-  //   category: "apps-platforms",
-  //   type: "B2B dashboard",
-  //   year: "2025",
-  //   description:
-  //     "A dense sales workspace redesigned for scanning, confident follow-up, and fewer lost opportunities.",
-  //   metrics: ["12 core flows", "SaaS UI", "Prototype"],
-  //   palette: "from-[#12110f] via-[#006d77] to-[#ff4d2e]",
-  //   previewImage: "/projects/atlas-crm.svg",
-  // },
 ];
 
 export const workCategories = [
@@ -168,12 +144,6 @@ export const processSteps = [
       "The approved design is translated into a fully functional website. This includes responsive development, testing across devices, and a smooth, production-ready launch.",
     icon: Rocket,
   },
-];
-
-export const proofPoints = [
-  { value: "36+", label: "Product screens designed" },
-  { value: "4-6w", label: "Typical launch timeline" },
-  { value: "100%", label: "Responsive by default" },
 ];
 
 export const capabilities = [

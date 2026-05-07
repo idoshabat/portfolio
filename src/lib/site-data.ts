@@ -107,30 +107,6 @@ export const projects = [
     previewImage: "/projects/hoopprogress.png",
     liveUrl:"https://hoop-progress-frontend.vercel.app/",
   },
-  // {
-  //   slug: "wellnest",
-  //   title: "Wellnest",
-  //   category: "apps-platforms",
-  //   type: "פלטפורמת בריאות",
-  //   year: "2025",
-  //   description:
-  //     "פלואו הזמנות רגוע שמאפשר להשוות מטפלים, לקבוע פגישות ולנהל תוכניות טיפול.",
-  //   metrics: ["31% יותר השלמות", "ווב אפ", "מחקר UX"],
-  //   palette: "from-[#ff4d2e] via-[#00a6fb] to-[#94e857]",
-  //   previewImage: "/projects/wellnest.svg",
-  // },
-  // {
-  //   slug: "atlas-crm",
-  //   title: "Atlas CRM",
-  //   category: "apps-platforms",
-  //   type: "דשבורד B2B",
-  //   year: "2025",
-  //   description:
-  //     "סביבת מכירות צפופה שעוצבה מחדש לסריקה מהירה, מעקב בטוח ופחות הזדמנויות שנופלות.",
-  //   metrics: ["12 פלואים מרכזיים", "UI למוצר SaaS", "פרוטוטייפ"],
-  //   palette: "from-[#12110f] via-[#006d77] to-[#ff4d2e]",
-  //   previewImage: "/projects/atlas-crm.svg",
-  // },
 ];
 
 export const workCategories = [
@@ -178,12 +154,6 @@ export const processSteps = [
       "העיצוב המאושר מתורגם לאתר פעיל ומלא. השלב כולל פיתוח רספונסיבי, בדיקות במכשירים שונים ועלייה לאוויר בצורה חלקה ומוכנה לפרודקשן.",
     icon: Rocket,
   },
-];
-
-export const proofPoints = [
-  { value: "36+", label: "מסכי מוצר שעוצבו" },
-  { value: "4-6w", label: "טיימליין טיפוסי להשקה" },
-  { value: "100%", label: "רספונסיבי כברירת מחדל" },
 ];
 
 export const capabilities = [

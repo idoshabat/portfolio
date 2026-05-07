@@ -3,11 +3,11 @@ import { ArrowLeft, ArrowUpRight, Play, Sparkles } from "lucide-react";
 import { ProjectCard } from "@/components/project-card";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { CapabilityMarquee } from "@/components/capability-marquee";
 import {
   capabilities,
   principles,
   processSteps,
-  proofPoints,
   projects,
   services,
 } from "@/lib/site-data";
@@ -83,16 +83,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="overflow-hidden border-b border-[var(--line)] bg-[var(--ink)] py-5 text-white">
-        <div className="marquee flex w-[200%] gap-6 whitespace-nowrap text-2xl font-black uppercase tracking-[0.08em]">
-          {[...capabilities, ...capabilities].map((item, index) => (
-            <span key={`${item}-${index}`} className="flex items-center gap-6">
-              {item}
-              <span className="text-[var(--coral)]">+</span>
-            </span>
-          ))}
-        </div>
-      </section>
+      <CapabilityMarquee items={capabilities} />
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <ScrollReveal className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
@@ -125,7 +116,7 @@ export default function Home() {
               <ArrowUpRight size={18} />
             </Link>
           </div>
-          <div className="mt-12 grid gap-8 lg:grid-cols-3">
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
             {projects.map((project, index) => (
               <ProjectCard key={project.slug} project={project} index={index} />
             ))}
@@ -134,7 +125,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <ScrollReveal className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+        <ScrollReveal>
           <div>
             <SectionHeading
               eyebrow="תהליך"
@@ -146,17 +137,6 @@ export default function Home() {
                   <step.icon size={24} />
                   <h3 className="mt-5 text-xl font-black">{step.title}</h3>
                   <p className="mt-2 leading-7 text-black/62">{step.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="rounded-[8px] border-2 border-[var(--ink)] bg-[var(--sun)] p-6 shadow-[10px_10px_0_#171513]">
-            <p className="text-sm font-black uppercase tracking-[0.2em]">למה לקוחות מתעניינים</p>
-            <div className="mt-8 grid gap-5">
-              {proofPoints.map((point) => (
-                <div key={point.label} className="border-b border-black/18 pb-5 last:border-b-0">
-                  <p className="text-5xl font-black">{point.value}</p>
-                  <p className="mt-1 font-bold text-black/62">{point.label}</p>
                 </div>
               ))}
             </div>

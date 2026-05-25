@@ -104,7 +104,7 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <section className="border-y border-[var(--line)] bg-white/42 py-20">
+      <section className="border-y border-[var(--line)] bg-[rgba(238,242,255,0.62)] py-20">
         <ScrollReveal className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <SectionHeading
@@ -144,7 +144,7 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <section className="border-t border-[var(--line)] bg-[var(--ink)] px-4 py-20 text-white sm:px-6 lg:px-8">
+      <section className="border-t border-[var(--line)] bg-[radial-gradient(circle_at_18%_18%,rgba(139,92,246,0.22),transparent_28rem),var(--ink)] px-4 py-20 text-white sm:px-6 lg:px-8">
         <ScrollReveal className="mx-auto grid max-w-7xl gap-6 md:grid-cols-3">
           {principles.map((principle) => (
             <div key={principle.title} className="border-t border-white/20 pt-6">

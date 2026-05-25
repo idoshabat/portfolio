@@ -64,7 +64,7 @@ export const projects = [
     description:
       "אתר תדמית לאדריכלות ותכנון שמציג את המומחיות של הסטודיו בצורה נקייה, מקצועית ובטוחה, עם ניווט ברור, היררכיה מדויקת ודרך מהירה להגיע לפרויקטים וליצירת קשר.",
     metrics: ["אתר תדמית", "גלריית פרויקטים", "פניות מלקוחות"],
-    palette: "from-[#006d77] via-[#d9f99d] to-[#ffd166]",
+    palette: "from-[#0b102f] via-[#2557d6] to-[#f3d58a]",
     previewImage: "/projects/layout-design.png",
     liveUrl: "https://www.layout-net.com/",
   },
@@ -77,7 +77,7 @@ export const projects = [
     description:
       "אתר לאקדמיית כדורסל שמרגיש אנרגטי, צעיר ומקצועי, עם מסר חד להורים ולשחקנים, הצגת תוכניות אימון וקריאה ברורה להצטרפות לאקדמיה.",
     metrics: ["אתר ספורט", "רישום לאימונים", "חוויית מובייל"],
-    palette: "from-[#12110f] via-[#ff4d2e] to-[#00a6fb]",
+    palette: "from-[#090d24] via-[#8b5cf6] to-[#38bdf8]",
     previewImage: "/projects/next-level.png",
     liveUrl: "https://www.nextlevelacademy.com/",
   },
@@ -90,7 +90,7 @@ export const projects = [
     description:
       "קונספט אתר בוטיק לסטודיו יוגה בעברית, עם שפה ויזואלית רגועה, חוויית RTL מלאה, עמוד בית עריכתי, לוח שיעורים, מחירים, צוות מורים וזרימת הזמנה שמרגישה פשוטה ונעימה.",
     metrics: ["RTL מלא", "לוח שיעורים", "זרימת הזמנה"],
-    palette: "from-[#3d2419] via-[#d8a47f] to-[#f2e8dc]",
+    palette: "from-[#151039] via-[#8b5cf6] to-[#f3d58a]",
     previewImage: "/projects/shalva-yoga.png",
     liveUrl: "https://yoga-app-zeta.vercel.app",
   },
@@ -103,7 +103,7 @@ export const projects = [
     description:
       "פלטפורמת אימונים לשחקני כדורסל ומאמנים, הכוללת אפליקציית מובייל, דשבורד ווב וחיבור מלא בין שחקן למאמן. המערכת מאפשרת מעקב אחר אימונים, סטטיסטיקות קליעה, תוכניות עבודה, בקשות חיבור והתראות.",
     metrics: ["אפליקציית מובייל", "דשבורד מאמנים", "מעקב ביצועים"],
-    palette: "from-[#0f0f11] via-[#f59e0b] to-[#34d399]",
+    palette: "from-[#090d24] via-[#2557d6] to-[#20d6c7]",
     previewImage: "/projects/hoopprogress.png",
     liveUrl:"https://hoop-progress-frontend.vercel.app/",
   },

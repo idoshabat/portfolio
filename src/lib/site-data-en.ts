@@ -54,7 +54,7 @@ export const projects = [
     description:
       "A polished company website for an architecture and planning studio, built around clear navigation, confident visual hierarchy, project discovery, and a direct path from interest to contact.",
     metrics: ["Brand website", "Project gallery", "Client inquiries"],
-    palette: "from-[#006d77] via-[#d9f99d] to-[#ffd166]",
+    palette: "from-[#0b102f] via-[#2557d6] to-[#f3d58a]",
     previewImage: "/projects/layout-design.png",
     liveUrl: "https://www.layout-net.com/",
   },
@@ -67,7 +67,7 @@ export const projects = [
     description:
       "An energetic website for a basketball academy, designed to speak clearly to parents and players, present training programs, and create a strong path toward joining the academy.",
     metrics: ["Sports website", "Training signups", "Mobile experience"],
-    palette: "from-[#12110f] via-[#ff4d2e] to-[#00a6fb]",
+    palette: "from-[#090d24] via-[#8b5cf6] to-[#38bdf8]",
     previewImage: "/projects/next-level.png",
     liveUrl: "https://www.nextlevelacademy.com/",
   },
@@ -80,7 +80,7 @@ export const projects = [
     description:
       "A boutique Hebrew RTL yoga studio concept with a calm editorial visual system, responsive home page, class schedule, pricing, teachers, studio information, contact flow, and a polished booking experience.",
     metrics: ["Full RTL", "Class schedule", "Booking flow"],
-    palette: "from-[#3d2419] via-[#d8a47f] to-[#f2e8dc]",
+    palette: "from-[#151039] via-[#8b5cf6] to-[#f3d58a]",
     previewImage: "/projects/shalva-yoga.png",
     liveUrl: "https://yoga-app-zeta.vercel.app/",
   },
@@ -93,7 +93,7 @@ export const projects = [
     description:
       "A training platform for basketball players and coaches, combining a mobile app, web dashboard, and full coach-player connection. The product supports workout tracking, shooting stats, assigned plans, connection requests, calendars, and notifications.",
     metrics: ["Mobile app", "Coach dashboard", "Performance tracking"],
-    palette: "from-[#0f0f11] via-[#f59e0b] to-[#34d399]",
+    palette: "from-[#090d24] via-[#2557d6] to-[#20d6c7]",
     previewImage: "/projects/hoopprogress.png",
     liveUrl: "https://hoop-progress-frontend.vercel.app/",
   },

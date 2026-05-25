@@ -62,9 +62,9 @@ export function WorkShowcase({ projects, categories, labels }: WorkShowcaseProps
               key={category.id}
               type="button"
               onClick={() => setActiveCategory(category.id)}
-              className={`rounded-full border px-4 py-2 text-sm font-black transition ${
+              className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
                 isActive
-                  ? "border-[var(--ink)] bg-[var(--ink)] text-white shadow-[4px_4px_0_var(--coral)]"
+                  ? "border-[var(--ink)] bg-[var(--ink)] text-white shadow-[0_14px_30px_rgba(27,23,19,0.16)]"
                   : "border-[var(--line)] bg-white/72 text-black/62 hover:border-[var(--ink)] hover:text-[var(--ink)]"
               }`}
             >
@@ -86,15 +86,15 @@ export function WorkShowcase({ projects, categories, labels }: WorkShowcaseProps
           <article
             id={project.slug}
             key={project.slug}
-            className="grid gap-8 border-t-2 border-[var(--ink)] pt-8 lg:grid-cols-[0.7fr_1.3fr]"
+            className="grid gap-8 border-t border-[var(--line)] pt-8 lg:grid-cols-[0.7fr_1.3fr]"
           >
             <div>
               <p className="font-mono text-sm text-black/48">CASE 0{index + 1}</p>
-              <h2 className="mt-3 text-4xl font-black">{project.title}</h2>
+              <h2 className="section-title mt-3 text-4xl">{project.title}</h2>
               <p className="mt-2 font-bold text-[var(--cobalt)]">{project.type}</p>
             </div>
             <div>
-              <div className="relative mb-7 aspect-[16/10] overflow-hidden rounded-[8px] border-2 border-[var(--ink)] bg-white shadow-[8px_8px_0_#171513]">
+              <div className="relative mb-7 aspect-[16/10] overflow-hidden border border-[var(--line)] bg-white shadow-[0_22px_58px_rgba(27,23,19,0.12)]">
                 <Image
                   src={project.previewImage}
                   alt={`${labels.previewAltPrefix}${project.title}${labels.previewAltSuffix ?? ""}`}
@@ -109,7 +109,7 @@ export function WorkShowcase({ projects, categories, labels }: WorkShowcaseProps
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="nav-cta mt-6 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-black"
+                  className="nav-cta mt-6 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-bold"
                 >
                   {labels.liveSite}
                   <ArrowUpRight size={18} />
@@ -117,8 +117,8 @@ export function WorkShowcase({ projects, categories, labels }: WorkShowcaseProps
               ) : null}
               <div className="mt-7 grid gap-4 sm:grid-cols-3">
                 {project.metrics.map((metric) => (
-                  <div key={metric} className="rounded-[8px] border border-[var(--line)] bg-white p-4">
-                    <p className="font-black">{metric}</p>
+                  <div key={metric} className="border border-[var(--line)] bg-white/72 p-4">
+                    <p className="font-semibold">{metric}</p>
                     <p className="mt-2 text-sm text-black/52">{labels.metricNote}</p>
                   </div>
                 ))}

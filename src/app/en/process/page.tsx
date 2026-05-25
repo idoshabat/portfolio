@@ -17,15 +17,15 @@ export default function EnglishProcessPage() {
         />
         <div className="mt-16 grid gap-0">
           {processSteps.map((step, index) => (
-            <article key={step.title} className="grid gap-6 border-t-2 border-[var(--ink)] py-9 md:grid-cols-[0.35fr_0.65fr]">
+            <article key={step.title} className="grid gap-6 border-t border-[var(--line)] py-9 md:grid-cols-[0.35fr_0.65fr]">
               <div className="flex items-center gap-5">
-                <span className="grid size-14 place-items-center rounded-full bg-[var(--coral)] text-xl font-black text-white">
+                <span className="grid size-14 place-items-center rounded-full bg-[var(--ink)] text-xl font-semibold text-white">
                   {index + 1}
                 </span>
                 <step.icon size={30} />
               </div>
               <div>
-                <h2 className="text-4xl font-black">{step.title}</h2>
+                <h2 className="section-title text-4xl">{step.title}</h2>
                 <p className="mt-4 max-w-3xl text-lg leading-8 text-black/64">{step.description}</p>
               </div>
             </article>

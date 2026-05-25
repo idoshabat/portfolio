@@ -194,21 +194,18 @@ export const principles = [
 export const packages = [
   {
     title: "Conversion Landing Page",
-    price: "From $1,800",
     description:
       "For a business, campaign, or service that needs one sharp page built around a clear offer and inquiry path.",
     items: ["Structure and copy direction", "Responsive design", "Form or WhatsApp flow", "Launch-ready build"],
   },
   {
     title: "Website or Store",
-    price: "From $3,500",
     description:
       "For businesses that need a full brand website or e-commerce store with a clear shopping or contact experience.",
     items: ["Core content pages", "Design and development", "Mobile optimization", "Testing and launch"],
   },
   {
     title: "Platform or App",
-    price: "Custom",
     description:
       "For more complex products such as web platforms, dashboards, mobile apps, or redesigns of existing digital products.",
     items: ["UX definition", "Screens and flows", "Design and development", "Existing product improvement"],

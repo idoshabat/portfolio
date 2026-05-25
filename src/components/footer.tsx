@@ -16,7 +16,7 @@ export function Footer() {
   ];
 
   return (
-    <footer dir={isEnglish ? "ltr" : "rtl"} className="border-t border-[var(--line)] bg-[var(--ink)] text-white">
+    <footer dir={isEnglish ? "ltr" : "rtl"} className="site-footer text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr] lg:px-8">
         <div>
           <p className="text-sm font-black uppercase tracking-[0.2em] text-white/46">

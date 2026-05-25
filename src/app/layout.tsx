@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Rubik } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
@@ -7,14 +7,10 @@ import { WhatsappButton } from "@/components/whatsapp-button";
 import { BackToTop } from "@/components/back-to-top";
 import { AccessibilityWidget } from "@/components/accessibility-widget";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const rubik = Rubik({
+  variable: "--font-rubik",
+  subsets: ["hebrew", "latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -34,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="he" dir="rtl" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="he" dir="rtl" className={rubik.variable}>
       <body className="antialiased">
         <div className="noise" />
         <Header />

@@ -44,7 +44,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="border-y border-[var(--line)] bg-[rgba(238,242,255,0.62)]">
+      <section className="border-y border-[var(--line)] bg-[rgba(247,239,227,0.62)]">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-black">יכולות</h2>
           <div className="mt-7 flex flex-wrap gap-3">

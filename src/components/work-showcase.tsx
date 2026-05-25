@@ -9,7 +9,7 @@ import { ProjectCard } from "@/components/project-card";
 type Project = {
   slug: string;
   title: string;
-  category: string;
+  categories: string[];
   type: string;
   year: string;
   description: string;
@@ -40,12 +40,12 @@ export function WorkShowcase({ projects, categories, labels }: WorkShowcaseProps
   const visibleCategories = categories.filter(
     (category) =>
       category.id === "all" ||
-      projects.some((project) => project.category === category.id)
+      projects.some((project) => project.categories.includes(category.id))
   );
   const filteredProjects =
     activeCategory === "all"
       ? projects
-      : projects.filter((project) => project.category === activeCategory);
+      : projects.filter((project) => project.categories.includes(activeCategory));
 
   return (
     <>
@@ -54,7 +54,7 @@ export function WorkShowcase({ projects, categories, labels }: WorkShowcaseProps
           const count =
             category.id === "all"
               ? projects.length
-              : projects.filter((project) => project.category === category.id).length;
+              : projects.filter((project) => project.categories.includes(category.id)).length;
           const isActive = activeCategory === category.id;
 
           return (

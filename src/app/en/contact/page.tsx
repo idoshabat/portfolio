@@ -1,10 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import { SectionHeading } from "@/components/section-heading";
 import { contactReasons } from "@/lib/site-data-en";
 
 export const metadata = {
   title: "Contact | Studio Ido",
-  description: "Start a web or mobile app design project.",
+  description: "Start a landing page, business website, e-commerce, web platform, or mobile app project.",
 };
 
 export default function EnglishContactPage() {
@@ -40,11 +41,12 @@ export default function EnglishContactPage() {
             <label className="grid gap-2">
               <span className="text-sm font-black">Project type</span>
               <select className="rounded-[8px] border border-[var(--line)] bg-[var(--paper)] px-4 py-3 outline-none transition focus:border-[var(--cobalt)] focus:shadow-[0_0_0_3px_rgba(0,109,119,0.16)]">
-                <option>Website design</option>
-                <option>Mobile app design</option>
-                <option>Web app design</option>
-                <option>UX audit</option>
-                <option>Ongoing design partner</option>
+                <option>Landing page</option>
+                <option>Business website</option>
+                <option>E-commerce website</option>
+                <option>Web platform</option>
+                <option>Mobile app</option>
+                <option>Redesign & improvement</option>
               </select>
             </label>
             <label className="grid gap-2">
@@ -59,6 +61,24 @@ export default function EnglishContactPage() {
             <label className="grid gap-2">
               <span className="text-sm font-black">What should we design?</span>
               <textarea className="min-h-36 rounded-[8px] border border-[var(--line)] bg-[var(--paper)] px-4 py-3 outline-none transition focus:border-[var(--cobalt)] focus:shadow-[0_0_0_3px_rgba(0,109,119,0.16)]" placeholder="Tell me about the business, deadline, and goals." />
+            </label>
+            <label className="flex items-start gap-3 rounded-[8px] border border-[var(--line)] bg-[var(--paper)] p-4 text-sm leading-6 text-black/68">
+              <input
+                type="checkbox"
+                required
+                className="mt-1 size-4 accent-[var(--cobalt)]"
+              />
+              <span>
+                I confirm that I have read and agree to the{" "}
+                <Link href="/en/terms" className="font-black text-[var(--cobalt)] underline-offset-4 hover:underline">
+                  Terms of Use
+                </Link>
+                {" "}and{" "}
+                <Link href="/en/privacy-policy" className="font-black text-[var(--cobalt)] underline-offset-4 hover:underline">
+                  Privacy Policy
+                </Link>
+                .
+              </span>
             </label>
             <a className="magnetic-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--coral)] px-6 py-4 text-sm font-black text-white shadow-[0_8px_0_#171513] transition hover:-translate-y-0.5" href="https://wa.me/972549408667?text=Hi%2C%20I%20would%20like%20to%20start%20a%20digital%20project." target="_blank" rel="noreferrer">
               Send a WhatsApp message

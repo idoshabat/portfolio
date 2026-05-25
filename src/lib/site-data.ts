@@ -1,11 +1,8 @@
 import {
   ArrowUpRight,
-  BadgeCheck,
   Blocks,
-  Brush,
   CalendarCheck,
   Code2,
-  Compass,
   Layers3,
   LayoutDashboard,
   MessagesSquare,
@@ -14,7 +11,6 @@ import {
   Rocket,
   ScanSearch,
   Smartphone,
-  Sparkles,
   WandSparkles,
 } from "lucide-react";
 
@@ -29,28 +25,40 @@ export const navItems = [
 
 export const services = [
   {
-    title: "עיצוב ובניית אתרים",
+    title: "דפי נחיתה",
     description:
-      "אתרי תדמית ודפי נחיתה שנראים מקצועיים, נטענים מהר ומובילים את המשתמש לפעולה ברורה, עם עיצוב רספונסיבי והתאמה מלאה למובייל.",
+      "דפי נחיתה ממוקדים לקמפיינים, השקות, איסוף לידים או מכירת שירות אחד, עם מסר חד, היררכיה ברורה וקריאה לפעולה שמובילה לתוצאה.",
+    icon: MousePointer2,
+  },
+  {
+    title: "אתרי תדמית",
+    description:
+      "אתרים לעסקים, בעלי מקצוע וסטודיואים שרוצים להציג מי הם, מה הם עושים, עבודות, המלצות ודרך פשוטה ליצור קשר.",
     icon: LayoutDashboard,
   },
   {
-    title: "עיצוב ובניית אפליקציות",
+    title: "אתרי איקומרס",
     description:
-      "אפליקציות ווב ומובייל עם פלואו ברור, ממשק מלוטש וחוויית משתמש שמרגישה פשוטה גם כשהמוצר מורכב.",
-    icon: Smartphone,
-  },
-  {
-    title: "חנות אונליין",
-    description:
-      "חנויות איקומרס עם עמודי מוצר חזקים, תהליך רכישה נוח, הצגת מוצרים שמוכרת וחוויית משתמש שמגדילה אמון והמרות.",
+      "חנויות אונליין עם עמודי מוצר חזקים, קטגוריות ברורות, חוויית רכישה נוחה ועיצוב שמגדיל אמון ומעודד קנייה.",
     icon: Blocks,
   },
   {
-    title: "אסטרטגיית UX",
+    title: "מערכות ווב",
     description:
-      "אפיון, מחקר מהיר, מסעות משתמש, וויירפריימים ותיעדוף שמתרגמים רעיון מבולגן למוצר ברור שאפשר לעצב ולבנות.",
-    icon: Compass,
+      "מוצרים דיגיטליים מורכבים יותר כמו דשבורדים, מערכות ניהול ופלטפורמות ווב, עם זרימות משתמש ברורות וממשק מלוטש.",
+    icon: Code2,
+  },
+  {
+    title: "אפליקציות מובייל",
+    description:
+      "עיצוב ובנייה של אפליקציות מובייל עם חוויית שימוש נוחה, מסכים מדויקים, זרימה ברורה והתאמה לצרכים של משתמשים אמיתיים.",
+    icon: Smartphone,
+  },
+  {
+    title: "שדרוג ועיצוב מחדש",
+    description:
+      "רענון לאתר, אפליקציה או מערכת קיימים כדי לשפר נראות, חוויית משתמש, היררכיה, אמינות והמרות בלי להתחיל הכול מאפס.",
+    icon: WandSparkles,
   },
 ];
 
@@ -58,52 +66,52 @@ export const projects = [
   {
     slug: "layout-design",
     title: "Layout Design",
-    category: "business-websites",
+    categories: ["business-websites"],
     type: "עיצוב ותכנון אדריכלי",
     year: "2026",
     description:
       "אתר תדמית לאדריכלות ותכנון שמציג את המומחיות של הסטודיו בצורה נקייה, מקצועית ובטוחה, עם ניווט ברור, היררכיה מדויקת ודרך מהירה להגיע לפרויקטים וליצירת קשר.",
     metrics: ["אתר תדמית", "גלריית פרויקטים", "פניות מלקוחות"],
-    palette: "from-[#0b102f] via-[#2557d6] to-[#f3d58a]",
+    palette: "from-[#211913] via-[#4f6042] to-[#d8a85d]",
     previewImage: "/projects/layout-design.png",
     liveUrl: "https://www.layout-net.com/",
   },
   {
     slug: "next-level-academy",
     title: "Next Level Academy",
-    category: "sports-wellness",
+    categories: ["business-websites"],
     type: "אקדמיית כדורסל",
     year: "2026",
     description:
       "אתר לאקדמיית כדורסל שמרגיש אנרגטי, צעיר ומקצועי, עם מסר חד להורים ולשחקנים, הצגת תוכניות אימון וקריאה ברורה להצטרפות לאקדמיה.",
     metrics: ["אתר ספורט", "רישום לאימונים", "חוויית מובייל"],
-    palette: "from-[#090d24] via-[#8b5cf6] to-[#38bdf8]",
+    palette: "from-[#211913] via-[#b85f45] to-[#2f8f8a]",
     previewImage: "/projects/next-level.png",
     liveUrl: "https://www.nextlevelacademy.com/",
   },
   {
     slug: "shalva-yoga-studio",
     title: "סטודיו שלווה",
-    category: "sports-wellness",
+    categories: ["business-websites"],
     type: "אתר סטודיו ליוגה",
     year: "2026",
     description:
       "קונספט אתר בוטיק לסטודיו יוגה בעברית, עם שפה ויזואלית רגועה, חוויית RTL מלאה, עמוד בית עריכתי, לוח שיעורים, מחירים, צוות מורים וזרימת הזמנה שמרגישה פשוטה ונעימה.",
     metrics: ["RTL מלא", "לוח שיעורים", "זרימת הזמנה"],
-    palette: "from-[#151039] via-[#8b5cf6] to-[#f3d58a]",
+    palette: "from-[#3b2a21] via-[#c98f7d] to-[#f7efe3]",
     previewImage: "/projects/shalva-yoga.png",
     liveUrl: "https://yoga-app-zeta.vercel.app",
   },
   {
     slug: "hoopprogress",
     title: "HoopProgress",
-    category: "apps-platforms",
+    categories: ["web-platforms", "mobile-apps"],
     type: "פלטפורמת אימוני כדורסל",
     year: "2026",
     description:
       "פלטפורמת אימונים לשחקני כדורסל ומאמנים, הכוללת אפליקציית מובייל, דשבורד ווב וחיבור מלא בין שחקן למאמן. המערכת מאפשרת מעקב אחר אימונים, סטטיסטיקות קליעה, תוכניות עבודה, בקשות חיבור והתראות.",
     metrics: ["אפליקציית מובייל", "דשבורד מאמנים", "מעקב ביצועים"],
-    palette: "from-[#090d24] via-[#2557d6] to-[#20d6c7]",
+    palette: "from-[#211913] via-[#4f6042] to-[#8fa58a]",
     previewImage: "/projects/hoopprogress.png",
     liveUrl:"https://hoop-progress-frontend.vercel.app/",
   },
@@ -111,10 +119,12 @@ export const projects = [
 
 export const workCategories = [
   { id: "all", label: "הכל" },
-  { id: "business-websites", label: "אתרים" },
-  { id: "sports-wellness", label: "ספורט ובריאות" },
-  { id: "apps-platforms", label: "אפליקציות ומערכות" },
-  { id: "ecommerce", label: "איקומרס" },
+  { id: "landing-pages", label: "דפי נחיתה" },
+  { id: "business-websites", label: "אתרי תדמית" },
+  { id: "ecommerce-websites", label: "אתרי איקומרס" },
+  { id: "web-platforms", label: "מערכות ווב" },
+  { id: "mobile-apps", label: "אפליקציות מובייל" },
+  { id: "redesign", label: "שדרוג ועיצוב מחדש" },
 ];
 
 export const processSteps = [
@@ -157,18 +167,17 @@ export const processSteps = [
 ];
 
 export const capabilities = [
-  "אסטרטגיית מוצר",
-  "אודיטי UX",
-  "וויירפריימים",
+  "דפי נחיתה",
+  "אתרי תדמית",
+  "אתרי איקומרס",
+  "מערכות ווב",
+  "אפליקציות מובייל",
+  "שדרוג ועיצוב מחדש",
   "עיצוב UI בפיגמה",
   "פרוטוטייפים",
-  "דפי נחיתה",
-  "אפליקציות מובייל",
-  "מערכות ווב",
-  "מערכות עיצוב",
-  "הנדאוף לפיתוח",
-  "MVP ללא קוד",
-  "כיוון מותג",
+  "וויירפריימים",
+  "חוויית משתמש",
+  "התאמה מלאה למובייל",
 ];
 
 export const principles = [
@@ -194,35 +203,35 @@ export const principles = [
 
 export const packages = [
   {
-    title: "אתר להשקה",
+    title: "דף נחיתה ממיר",
     price: "החל מ-$1,800",
     description:
-      "ליזמים ועסקי שירות שצריכים אתר חד, אמין ומוכן ללקוחות במהירות.",
-    items: ["5-7 אזורים", "עיצוב רספונסיבי", "כיוון לקופי", "הנדאוף לפיתוח"],
+      "לעסק, קמפיין או שירות שצריכים עמוד חד שמציג הצעה אחת ומוביל לפנייה.",
+    items: ["מבנה וקופי ראשוני", "עיצוב רספונסיבי", "טופס או WhatsApp", "עלייה לאוויר"],
   },
   {
-    title: "ספרינט עיצוב אפליקציה",
+    title: "אתר או חנות",
     price: "החל מ-$3,500",
     description:
-      "לאפליקציות ווב או מובייל שצריכות פלואו מוצר ברור ומסכים מלוטשים.",
-    items: ["מפת UX", "10-18 מסכים", "פרוטוטייפ קליקבילי", "ערכת UI"],
+      "לעסקים שצריכים אתר תדמית מלא או חנות איקומרס עם חוויית רכישה ברורה.",
+    items: ["עמודי תוכן מרכזיים", "עיצוב ובנייה", "התאמה למובייל", "בדיקות והשקה"],
   },
   {
-    title: "שותף מוצר",
+    title: "מערכת או אפליקציה",
     price: "מותאם אישית",
     description:
-      "לצוותי מוצר שצריכים תמיכת עיצוב שוטפת ברמת סניור לאורך ריליסים.",
-    items: ["מחזורי עיצוב שבועיים", "QA עיצובי", "פיתוח מערכת העיצוב", "תמיכה אסטרטגית"],
+      "למוצרים מורכבים יותר כמו מערכת ווב, דשבורד, אפליקציית מובייל או רידיזיין למוצר קיים.",
+    items: ["אפיון UX", "מסכים וזרימות", "עיצוב ובנייה", "שיפור ושדרוג מוצר קיים"],
   },
 ];
 
 export const contactReasons = [
-  { label: "אתר חדש", icon: Brush },
-  { label: "אפליקציית מובייל", icon: Smartphone },
+  { label: "דף נחיתה", icon: MousePointer2 },
+  { label: "אתר תדמית", icon: LayoutDashboard },
+  { label: "אתר איקומרס", icon: Blocks },
   { label: "מערכת ווב", icon: Code2 },
-  { label: "אודיט עיצוב", icon: BadgeCheck },
-  { label: "השקה מהירה", icon: CalendarCheck },
-  { label: "משהו נועז", icon: Sparkles },
+  { label: "אפליקציית מובייל", icon: Smartphone },
+  { label: "שדרוג ועיצוב מחדש", icon: WandSparkles },
 ];
 
 export { ArrowUpRight };

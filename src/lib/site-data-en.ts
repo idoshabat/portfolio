@@ -1,10 +1,7 @@
 import {
-  BadgeCheck,
   Blocks,
-  Brush,
   CalendarCheck,
   Code2,
-  Compass,
   Layers3,
   LayoutDashboard,
   MessagesSquare,
@@ -13,34 +10,45 @@ import {
   Rocket,
   ScanSearch,
   Smartphone,
-  Sparkles,
   WandSparkles,
 } from "lucide-react";
 
 export const services = [
   {
-    title: "Website Design & Development",
+    title: "Landing Pages",
     description:
-      "Brand websites and landing pages that look professional, load fast, and guide visitors toward a clear action, with responsive design and a strong mobile experience.",
+      "Focused landing pages for campaigns, launches, lead generation, or selling one clear offer, with sharp messaging, strong hierarchy, and a conversion-focused call to action.",
+    icon: MousePointer2,
+  },
+  {
+    title: "Business Websites",
+    description:
+      "Websites for businesses, professionals, and studios that need to present who they are, what they do, selected work, testimonials, and a clear path to contact.",
     icon: LayoutDashboard,
   },
   {
-    title: "App Design & Development",
+    title: "E-commerce Websites",
     description:
-      "Web and mobile apps with clear flows, polished interfaces, and user experiences that feel simple even when the product is complex.",
-    icon: Smartphone,
-  },
-  {
-    title: "Online Stores",
-    description:
-      "E-commerce experiences with strong product pages, smooth checkout flows, product presentation that sells, and UX that builds trust and improves conversions.",
+      "Online stores with strong product pages, clear categories, smooth shopping experiences, and design that builds trust and supports sales.",
     icon: Blocks,
   },
   {
-    title: "UX Strategy",
+    title: "Web Platforms",
     description:
-      "Product definition, quick research, user journeys, wireframes, and prioritization that turn a messy idea into a clear product direction.",
-    icon: Compass,
+      "More complex digital products such as dashboards, management systems, and web platforms, with clear user flows and polished interfaces.",
+    icon: Code2,
+  },
+  {
+    title: "Mobile Apps",
+    description:
+      "Design and development for mobile apps with smooth usability, focused screens, clear flows, and an experience built around real user needs.",
+    icon: Smartphone,
+  },
+  {
+    title: "Redesign & Improvement",
+    description:
+      "A focused refresh for an existing website, app, or platform to improve visual quality, UX, hierarchy, trust, and conversions without starting from zero.",
+    icon: WandSparkles,
   },
 ];
 
@@ -48,52 +56,52 @@ export const projects = [
   {
     slug: "layout-design",
     title: "Layout Design",
-    category: "business-websites",
+    categories: ["business-websites"],
     type: "Architecture & planning studio",
     year: "2026",
     description:
       "A polished company website for an architecture and planning studio, built around clear navigation, confident visual hierarchy, project discovery, and a direct path from interest to contact.",
     metrics: ["Brand website", "Project gallery", "Client inquiries"],
-    palette: "from-[#0b102f] via-[#2557d6] to-[#f3d58a]",
+    palette: "from-[#211913] via-[#4f6042] to-[#d8a85d]",
     previewImage: "/projects/layout-design.png",
     liveUrl: "https://www.layout-net.com/",
   },
   {
     slug: "next-level-academy",
     title: "Next Level Academy",
-    category: "sports-wellness",
+    categories: ["business-websites"],
     type: "Basketball academy",
     year: "2026",
     description:
       "An energetic website for a basketball academy, designed to speak clearly to parents and players, present training programs, and create a strong path toward joining the academy.",
     metrics: ["Sports website", "Training signups", "Mobile experience"],
-    palette: "from-[#090d24] via-[#8b5cf6] to-[#38bdf8]",
+    palette: "from-[#211913] via-[#b85f45] to-[#2f8f8a]",
     previewImage: "/projects/next-level.png",
     liveUrl: "https://www.nextlevelacademy.com/",
   },
   {
     slug: "shalva-yoga-studio",
     title: "Shalva Studio",
-    category: "sports-wellness",
+    categories: ["business-websites"],
     type: "Yoga studio website",
     year: "2026",
     description:
       "A boutique Hebrew RTL yoga studio concept with a calm editorial visual system, responsive home page, class schedule, pricing, teachers, studio information, contact flow, and a polished booking experience.",
     metrics: ["Full RTL", "Class schedule", "Booking flow"],
-    palette: "from-[#151039] via-[#8b5cf6] to-[#f3d58a]",
+    palette: "from-[#3b2a21] via-[#c98f7d] to-[#f7efe3]",
     previewImage: "/projects/shalva-yoga.png",
     liveUrl: "https://yoga-app-zeta.vercel.app/",
   },
   {
     slug: "hoopprogress",
     title: "HoopProgress",
-    category: "apps-platforms",
+    categories: ["web-platforms", "mobile-apps"],
     type: "Basketball training platform",
     year: "2026",
     description:
       "A training platform for basketball players and coaches, combining a mobile app, web dashboard, and full coach-player connection. The product supports workout tracking, shooting stats, assigned plans, connection requests, calendars, and notifications.",
     metrics: ["Mobile app", "Coach dashboard", "Performance tracking"],
-    palette: "from-[#090d24] via-[#2557d6] to-[#20d6c7]",
+    palette: "from-[#211913] via-[#4f6042] to-[#8fa58a]",
     previewImage: "/projects/hoopprogress.png",
     liveUrl: "https://hoop-progress-frontend.vercel.app/",
   },
@@ -101,10 +109,12 @@ export const projects = [
 
 export const workCategories = [
   { id: "all", label: "All" },
-  { id: "business-websites", label: "Websites" },
-  { id: "sports-wellness", label: "Sports & Wellness" },
-  { id: "apps-platforms", label: "Apps & Platforms" },
-  { id: "ecommerce", label: "E-commerce" },
+  { id: "landing-pages", label: "Landing Pages" },
+  { id: "business-websites", label: "Business Websites" },
+  { id: "ecommerce-websites", label: "E-commerce Websites" },
+  { id: "web-platforms", label: "Web Platforms" },
+  { id: "mobile-apps", label: "Mobile Apps" },
+  { id: "redesign", label: "Redesigns" },
 ];
 
 export const processSteps = [
@@ -147,18 +157,17 @@ export const processSteps = [
 ];
 
 export const capabilities = [
-  "Product strategy",
-  "UX audits",
-  "Wireframes",
+  "Landing pages",
+  "Business websites",
+  "E-commerce websites",
+  "Web platforms",
+  "Mobile apps",
+  "Redesigns",
   "Figma UI design",
   "Interactive prototypes",
-  "Landing pages",
-  "Mobile apps",
-  "Web apps",
-  "Design systems",
-  "Developer handoff",
-  "No-code MVPs",
-  "Brand direction",
+  "Wireframes",
+  "User experience",
+  "Responsive design",
 ];
 
 export const principles = [
@@ -184,33 +193,33 @@ export const principles = [
 
 export const packages = [
   {
-    title: "Launch Website",
+    title: "Conversion Landing Page",
     price: "From $1,800",
     description:
-      "For founders and service businesses that need a sharp, credible site fast.",
-    items: ["5-7 sections", "Responsive design", "Copy direction", "Developer handoff"],
+      "For a business, campaign, or service that needs one sharp page built around a clear offer and inquiry path.",
+    items: ["Structure and copy direction", "Responsive design", "Form or WhatsApp flow", "Launch-ready build"],
   },
   {
-    title: "App Design Sprint",
+    title: "Website or Store",
     price: "From $3,500",
     description:
-      "For mobile or web apps that need a validated product flow and polished screens.",
-    items: ["UX flow map", "10-18 screens", "Clickable prototype", "UI kit"],
+      "For businesses that need a full brand website or e-commerce store with a clear shopping or contact experience.",
+    items: ["Core content pages", "Design and development", "Mobile optimization", "Testing and launch"],
   },
   {
-    title: "Product Partner",
+    title: "Platform or App",
     price: "Custom",
     description:
-      "For ongoing product teams that need senior design support across releases.",
-    items: ["Weekly design cycles", "Design QA", "System evolution", "Strategy support"],
+      "For more complex products such as web platforms, dashboards, mobile apps, or redesigns of existing digital products.",
+    items: ["UX definition", "Screens and flows", "Design and development", "Existing product improvement"],
   },
 ];
 
 export const contactReasons = [
-  { label: "New website", icon: Brush },
+  { label: "Landing page", icon: MousePointer2 },
+  { label: "Business website", icon: LayoutDashboard },
+  { label: "E-commerce website", icon: Blocks },
+  { label: "Web platform", icon: Code2 },
   { label: "Mobile app", icon: Smartphone },
-  { label: "Web app", icon: Code2 },
-  { label: "Design audit", icon: BadgeCheck },
-  { label: "Fast launch", icon: CalendarCheck },
-  { label: "Something bold", icon: Sparkles },
+  { label: "Redesign & improvement", icon: WandSparkles },
 ];

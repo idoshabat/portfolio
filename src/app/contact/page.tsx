@@ -1,10 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import { SectionHeading } from "@/components/section-heading";
 import { contactReasons } from "@/lib/site-data";
 
 export const metadata = {
   title: "צור קשר | Studio Ido",
-  description: "מתחילים פרויקט עיצוב אתר או אפליקציה.",
+  description: "מתחילים פרויקט דף נחיתה, אתר, חנות, מערכת ווב או אפליקציית מובייל.",
 };
 
 export default function ContactPage() {
@@ -40,11 +41,12 @@ export default function ContactPage() {
             <label className="grid gap-2">
               <span className="text-sm font-black">סוג פרויקט</span>
               <select className="rounded-[8px] border border-[var(--line)] bg-[var(--paper)] px-4 py-3 outline-none transition focus:border-[var(--cobalt)] focus:shadow-[0_0_0_3px_rgba(0,109,119,0.16)]">
-                <option>עיצוב אתר</option>
-                <option>עיצוב אפליקציית מובייל</option>
-                <option>עיצוב מערכת ווב</option>
-                <option>אודיט UX</option>
-                <option>שותף עיצוב מתמשך</option>
+                <option>דף נחיתה</option>
+                <option>אתר תדמית</option>
+                <option>אתר איקומרס</option>
+                <option>מערכת ווב</option>
+                <option>אפליקציית מובייל</option>
+                <option>שדרוג ועיצוב מחדש</option>
               </select>
             </label>
             <label className="grid gap-2">
@@ -59,6 +61,24 @@ export default function ContactPage() {
             <label className="grid gap-2">
               <span className="text-sm font-black">מה צריך לעצב?</span>
               <textarea className="min-h-36 rounded-[8px] border border-[var(--line)] bg-[var(--paper)] px-4 py-3 outline-none transition focus:border-[var(--cobalt)] focus:shadow-[0_0_0_3px_rgba(0,109,119,0.16)]" placeholder="ספרו על העסק, הדדליין והמטרות." />
+            </label>
+            <label className="flex items-start gap-3 rounded-[8px] border border-[var(--line)] bg-[var(--paper)] p-4 text-sm leading-6 text-black/68">
+              <input
+                type="checkbox"
+                required
+                className="mt-1 size-4 accent-[var(--cobalt)]"
+              />
+              <span>
+                אני מאשר/ת שקראתי ואני מסכים/ה ל
+                <Link href="/terms" className="font-black text-[var(--cobalt)] underline-offset-4 hover:underline">
+                  תקנון האתר
+                </Link>
+                {" "}ול
+                <Link href="/privacy-policy" className="font-black text-[var(--cobalt)] underline-offset-4 hover:underline">
+                  מדיניות הפרטיות
+                </Link>
+                .
+              </span>
             </label>
             <a className="magnetic-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--coral)] px-6 py-4 text-sm font-black text-white shadow-[0_8px_0_#171513] transition hover:-translate-y-0.5" href="https://wa.me/972549408667?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%94%D7%AA%D7%97%D7%99%D7%9C%20%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%20%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99." target="_blank" rel="noreferrer">
               שליחת הודעה בוואטסאפ

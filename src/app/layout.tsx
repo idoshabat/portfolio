@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { WhatsappButton } from "@/components/whatsapp-button";
 import { BackToTop } from "@/components/back-to-top";
+import { AccessibilityWidget } from "@/components/accessibility-widget";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <AccessibilityWidget />
         <WhatsappButton />
         <BackToTop />
       </body>

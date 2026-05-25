@@ -9,6 +9,11 @@ import { usePathname } from "next/navigation";
 export function Footer() {
   const locale = localeFromPath(usePathname());
   const isEnglish = locale === "en";
+  const legalLinks = [
+    { href: "/privacy-policy", label: isEnglish ? "Privacy policy" : "מדיניות פרטיות" },
+    { href: "/terms", label: isEnglish ? "Terms of use" : "תקנון אתר" },
+    { href: "/accessibility", label: isEnglish ? "Accessibility" : "הצהרת נגישות" },
+  ];
 
   return (
     <footer dir={isEnglish ? "ltr" : "rtl"} className="border-t border-[var(--line)] bg-[var(--ink)] text-white">
@@ -55,8 +60,17 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-white/42">
-        © 2026 Studio Ido. {isEnglish ? "All rights reserved." : "כל הזכויות שמורות."}
+      <div className="border-t border-white/10 px-4 py-5 text-xs text-white/42">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 sm:flex-row">
+          <p>© 2026 Studio Ido. {isEnglish ? "All rights reserved." : "כל הזכויות שמורות."}</p>
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
+            {legalLinks.map((link) => (
+              <Link key={link.href} href={withLocale(link.href, locale)} className="hover:text-white">
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -3,7 +3,7 @@ import { packages, services } from "@/lib/site-data";
 
 export const metadata = {
   title: "שירותים | Studio Ido",
-  description: "עיצוב ובניית אתרים, אפליקציות, חנויות אונליין ואסטרטגיית UX.",
+  description: "דפי נחיתה, אתרי תדמית, אתרי איקומרס, מערכות ווב, אפליקציות מובייל ושדרוגים דיגיטליים.",
 };
 
 export default function ServicesPage() {
@@ -13,7 +13,7 @@ export default function ServicesPage() {
         <SectionHeading
           eyebrow="שירותים"
           title="כל מה שצריך כדי להפוך רעיון לנוכחות דיגיטלית שעובדת."
-          copy="מאפיון ועיצוב ועד בנייה והשקה, השירותים בנויים לעסקים שרוצים אתר, אפליקציה או חנות שנראים טוב ומביאים תוצאות."
+          copy="מדף נחיתה ממוקד ועד מערכת ווב או אפליקציית מובייל, השירותים בנויים לעסקים שרוצים נראות חזקה, חוויית משתמש ברורה וביצוע שמביא תוצאות."
         />
         <div className="mt-14 grid gap-5 md:grid-cols-2">
           {services.map((service) => (

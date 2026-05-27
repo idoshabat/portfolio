@@ -64,6 +64,19 @@ export const services = [
 
 export const projects = [
   {
+    slug: "solara",
+    title: "SOLARA",
+    categories: ["ecommerce-websites"],
+    type: "חנות איקומרס לבגדי קיץ",
+    year: "2026",
+    description:
+      "דמו חנות אונליין בעברית למותג אופנת קיץ פרימיום, עם שפה יוקרתית, קטלוג מוצרים, עמודי מוצר, בחירת מידות, מדריך מידות, עגלת קניות, Wishlist, חיפוש גלובלי וזרימת Checkout עם Stripe במצב בדיקה.",
+    metrics: ["אתר איקומרס", "עגלה ו-Wishlist", "Stripe Checkout"],
+    palette: "from-[#102d29] via-[#d77d60] to-[#f7f1e7]",
+    previewImage: "/projects/solara.png",
+    liveUrl: "https://solara-sandy-six.vercel.app/",
+  },
+  {
     slug: "layout-design",
     title: "Layout Design",
     categories: ["business-websites"],

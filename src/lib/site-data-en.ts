@@ -54,6 +54,20 @@ export const services = [
 
 export const projects = [
   {
+    slug: "solara",
+    title: "SOLARA",
+    categories: ["ecommerce-websites"],
+    type: "Summer fashion ecommerce store",
+    year: "2026",
+    description:
+      "A Hebrew RTL ecommerce demo for a premium summer clothing brand, with luxury storefront styling, product catalog, product detail pages, size selection, size guide, cart drawer, wishlist, global search, quick view, and a Stripe Checkout test flow.",
+    metrics: ["E-commerce store", "Cart + wishlist", "Stripe Checkout"],
+    palette: "from-[#102d29] via-[#d77d60] to-[#f7f1e7]",
+    previewImage: "/projects/solara.png",
+    liveUrl: "https://solara-sandy-six.vercel.app/",
+
+  },
+  {
     slug: "layout-design",
     title: "Layout Design",
     categories: ["business-websites"],

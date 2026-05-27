@@ -90,7 +90,7 @@ export default function EnglishHome() {
         <ScrollReveal className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Selected work" title="A few examples that show direction, not just pretty colors." />
           <div className="mt-12 grid gap-8 md:grid-cols-2">
-            {projects.map((project, index) => (
+            {projects.slice(0, 4).map((project, index) => (
               <ProjectCard key={project.slug} project={project} index={index} />
             ))}
           </div>

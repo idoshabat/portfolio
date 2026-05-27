@@ -99,7 +99,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
-            {projects.map((project, index) => (
+            {projects.slice(0, 4).map((project, index) => (
               <ProjectCard key={project.slug} project={project} index={index} />
             ))}
           </div>

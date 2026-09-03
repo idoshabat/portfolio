@@ -1,0 +1,53 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#07090F"/>
+  <circle cx="226" cy="126" r="260" fill="#51F7FF" fill-opacity="0.16"/>
+  <circle cx="1110" cy="134" r="238" fill="#C9FF3F" fill-opacity="0.13"/>
+  <rect x="64" y="62" width="1272" height="776" rx="28" fill="#0B0F17" stroke="white" stroke-opacity="0.12"/>
+  <rect x="106" y="102" width="1188" height="74" rx="37" fill="#111723" stroke="white" stroke-opacity="0.1"/>
+  <rect x="132" y="119" width="40" height="40" rx="12" fill="#07090F" stroke="#51F7FF" stroke-opacity="0.7"/>
+  <path d="M143 145H151L156 126L164 153L170 137H181" stroke="#C9FF3F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="194" y="148" fill="#F8FBFF" font-family="Arial, sans-serif" font-size="26" font-weight="700">FitAI Coach</text>
+  <rect x="1112" y="118" width="138" height="42" rx="21" fill="#C9FF3F"/>
+  <text x="1142" y="146" fill="#07090F" font-family="Arial, sans-serif" font-size="16" font-weight="700">Start free</text>
+  <text x="126" y="270" fill="#51F7FF" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">AI TRAINING LANDING PAGE</text>
+  <text x="126" y="372" fill="#F8FBFF" font-family="Arial, sans-serif" font-size="88" font-weight="700">Your Personal</text>
+  <text x="126" y="466" fill="#F8FBFF" font-family="Arial, sans-serif" font-size="88" font-weight="700">AI Fitness Coach</text>
+  <text x="130" y="526" fill="#F8FBFF" fill-opacity="0.72" font-family="Arial, sans-serif" font-size="27">Personalized workouts, nutrition and progress tracking in one premium app.</text>
+  <rect x="126" y="582" width="250" height="58" rx="29" fill="#C9FF3F"/>
+  <text x="174" y="620" fill="#07090F" font-family="Arial, sans-serif" font-size="19" font-weight="700">Start 7-day trial</text>
+  <rect x="402" y="582" width="214" height="58" rx="29" fill="white" fill-opacity="0.06" stroke="white" stroke-opacity="0.14"/>
+  <text x="450" y="620" fill="#F8FBFF" font-family="Arial, sans-serif" font-size="19" font-weight="700">Watch demo</text>
+  <rect x="142" y="704" width="238" height="84" rx="24" fill="white" fill-opacity="0.055" stroke="white" stroke-opacity="0.12"/>
+  <text x="170" y="742" fill="#F8FBFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Training plans</text>
+  <text x="170" y="771" fill="#F8FBFF" fill-opacity="0.54" font-family="Arial, sans-serif" font-size="16">Adaptive weekly flow</text>
+  <rect x="406" y="704" width="238" height="84" rx="24" fill="white" fill-opacity="0.055" stroke="white" stroke-opacity="0.12"/>
+  <text x="434" y="742" fill="#F8FBFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Progress data</text>
+  <text x="434" y="771" fill="#F8FBFF" fill-opacity="0.54" font-family="Arial, sans-serif" font-size="16">Clean coaching dashboard</text>
+  <rect x="670" y="704" width="238" height="84" rx="24" fill="white" fill-opacity="0.055" stroke="white" stroke-opacity="0.12"/>
+  <text x="698" y="742" fill="#F8FBFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Smart nutrition</text>
+  <text x="698" y="771" fill="#F8FBFF" fill-opacity="0.54" font-family="Arial, sans-serif" font-size="16">Macros and habits</text>
+  <ellipse cx="1054" cy="498" rx="245" ry="272" fill="#51F7FF" fill-opacity="0.06"/>
+  <rect x="931" y="221" width="246" height="532" rx="48" fill="#05070C" stroke="white" stroke-opacity="0.18" stroke-width="8"/>
+  <rect x="950" y="244" width="208" height="486" rx="34" fill="url(#phone)"/>
+  <rect x="1000" y="264" width="108" height="8" rx="4" fill="white" fill-opacity="0.18"/>
+  <text x="976" y="326" fill="#51F7FF" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">TODAY</text>
+  <text x="976" y="360" fill="white" font-family="Arial, sans-serif" font-size="27" font-weight="700">Push Strength</text>
+  <circle cx="1114" cy="344" r="24" fill="#C9FF3F"/>
+  <path d="M1107 333L1123 344L1107 355V333Z" fill="#07090F"/>
+  <rect x="976" y="392" width="156" height="112" rx="24" fill="white" fill-opacity="0.065" stroke="white" stroke-opacity="0.1"/>
+  <text x="998" y="426" fill="white" fill-opacity="0.62" font-family="Arial, sans-serif" font-size="15">AI readiness</text>
+  <text x="998" y="475" fill="#C9FF3F" font-family="Arial, sans-serif" font-size="48" font-weight="700">92%</text>
+  <rect x="976" y="532" width="156" height="44" rx="16" fill="white" fill-opacity="0.06"/>
+  <rect x="976" y="590" width="156" height="44" rx="16" fill="white" fill-opacity="0.06"/>
+  <rect x="976" y="648" width="156" height="44" rx="16" fill="white" fill-opacity="0.06"/>
+  <path d="M1002 554H1108" stroke="#51F7FF" stroke-opacity="0.76" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1002 612H1088" stroke="#C9FF3F" stroke-opacity="0.76" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1002 670H1120" stroke="#51F7FF" stroke-opacity="0.76" stroke-width="8" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="phone" x1="950" y1="244" x2="1158" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="0.5" stop-color="#07090F"/>
+      <stop offset="1" stop-color="#152413"/>
+    </linearGradient>
+  </defs>
+</svg>

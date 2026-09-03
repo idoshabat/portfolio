@@ -54,6 +54,19 @@ export const services = [
 
 export const projects = [
   {
+    slug: "fitai-coach",
+    title: "FitAI Coach",
+    categories: ["landing-pages"],
+    type: "AI fitness app landing page",
+    year: "2026",
+    description:
+      "A polished bilingual landing page concept for an AI fitness app, with Hebrew-first content, English toggle, premium hero section, animated mobile app mockup, benefits, testimonials, conversion-focused CTAs, and a lead form for a free trial.",
+    metrics: ["Landing page", "Hebrew + English", "Lead form"],
+    palette: "from-[#07090f] via-[#51f7ff] to-[#c9ff3f]",
+    previewImage: "/projects/fitai-coach.svg",
+    liveUrl: "https://fit-ai-coach-pi.vercel.app/",
+  },
+  {
     slug: "solara",
     title: "SOLARA",
     categories: ["ecommerce-websites"],

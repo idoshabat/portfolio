@@ -64,6 +64,19 @@ export const services = [
 
 export const projects = [
   {
+    slug: "fitai-coach",
+    title: "FitAI Coach",
+    categories: ["landing-pages"],
+    type: "דף נחיתה לאפליקציית AI Fitness",
+    year: "2026",
+    description:
+      "דף נחיתה דו־לשוני לאפליקציית כושר מבוססת AI, עם חוויית עברית כברירת מחדל, מעבר לאנגלית, הירו פרימיום, מוקאפ מובייל אנימטיבי, יתרונות, עדויות, קריאות לפעולה וטופס לידים לניסיון חינם.",
+    metrics: ["דף נחיתה", "עברית ואנגלית", "טופס לידים"],
+    palette: "from-[#07090f] via-[#51f7ff] to-[#c9ff3f]",
+    previewImage: "/projects/fitai-coach.svg",
+    liveUrl: "https://fit-ai-coach-pi.vercel.app/",
+  },
+  {
     slug: "solara",
     title: "SOLARA",
     categories: ["ecommerce-websites"],
